@@ -1,5 +1,5 @@
 
-## Normality Tests
+# Normality Tests
 Analizan si los datos difieren o no de una distribución normal.
 
 Usar estadística paramétrica o no paramétrica.
@@ -14,7 +14,7 @@ Métodos analíticos:
 * Kolmogorov-Smirnov
 * Jarque-Bera: Cuantifica qué tanto se desvían los coeficientes de asimetría y curtosis esperadas en una distribución normal.
 
-#### Kolmogorov-Smirnov 
+## Kolmogorov-Smirnov 
 n > 50
 
 The Kolmogorov-Smirnov test is used to test whether or not or not a sample comes from a certain distribution.
@@ -75,7 +75,7 @@ ks_2samp(data1, data2)
 
 
 
-#### Shapiro-Wilk Test
+## Shapiro-Wilk Test
 Tests whether a data sample has a Gaussian distribution.
 
 Assumptions
@@ -102,7 +102,7 @@ else:
     Probably Gaussian
 
 
-#### D'Agostinos K^2 Test
+## D'Agostinos K^2 Test
 
 Tests whether a data sample has a Gaussian distribution.
 
@@ -131,7 +131,7 @@ else:
     Probably Gaussian
 
 
-#### Anderson-Darling Test
+## Anderson-Darling Test
 
 Tests whether a data sample has a Gaussian distribution.
 
@@ -165,9 +165,9 @@ for i in range(len(result.critical_values)):
     Probably Gaussian at the 1.0% level
 
 
-## Correlation tests
+# Correlation tests
 
-#### Person s Correlation Coefficient
+## Person s Correlation Coefficient
 
 Tests whether two samples have a linear relationship.
 
@@ -202,7 +202,7 @@ else:
     Probably dependent
 
 
-#### Spearman's Rank Correlation
+## Spearman's Rank Correlation
 Tests whether two samples have a monotonic relationship.
 
 Assumptions
@@ -234,7 +234,7 @@ else:
     Probably dependent
 
 
-#### Kendall's Rank Correlation
+## Kendall's Rank Correlation
 Tests whether two samples have a monotonic relationship.
 
 Assumptions
@@ -265,7 +265,7 @@ else:
     Probably dependent
 
 
-#### Chi-Squared Test
+## Chi-Squared Test
 Tests whether two categorical variables are related or independent.
 
 Assumptions
@@ -296,7 +296,7 @@ else:
     Probably independent
 
 
-## Stationary Tests
+# Stationary Tests
 This section lists statistical tests that you can use to check if a time series is stationary or not.
 
 Qué es una serie estacionaria
@@ -349,7 +349,7 @@ Image(filename='autocovarianza.png')
 
 
 
-#### Augmented Dickey-Fuller Unit Root Test
+## Augmented Dickey-Fuller Unit Root Test
 Tests whether a time series has a unit root, e.g. has a trend or more generally is autoregressive.
 
 Assumptions
@@ -378,7 +378,7 @@ else:
     Probably not Stationary
 
 
-#### Kwiatkowski-Phillips-Schmidt-Shin
+## Kwiatkowski-Phillips-Schmidt-Shin
 Tests whether a time series is trend stationary or not.
 
 Assumptions
@@ -406,10 +406,10 @@ else:
     Probably not Stationary
 
 
-## Parametric Statistical Hypothesis Tests
+# Parametric Statistical Hypothesis Tests
 This section lists statistical tests that you can use to compare data samples.
 
-#### z-test
+## z-test
 Z-test is a test for the proportions. In other words this is a statistical test that helps us evaluate our beliefs about certain proportions in the population based on the sample at hand.
 
 * The sample size should be greater than 30. Otherwise, we should use the t-test.
@@ -461,7 +461,7 @@ else:
 
 ```
 
-#### Student’s t-test
+## Student’s t-test
 Tests whether the means of two independent samples are significantly different.
 
 Assumptions
@@ -495,7 +495,7 @@ else:
     Probably the same distribution
 
 
-#### Paired Student’s t-test
+## Paired Student’s t-test
 Tests whether the means of two paired samples are significantly different.
 
 Assumptions
@@ -531,7 +531,7 @@ else:
     Probably the same distribution
 
 
-#### Analysis of Variance Test (ANOVA)
+## Analysis of Variance Test (ANOVA)
 Tests whether the means of two or more independent samples are significantly different.
 
 Assumptions
@@ -566,7 +566,7 @@ else:
     Probably the same distribution
 
 
-#### Tukey’s multiple comparisons
+## Tukey’s multiple comparisons
 Use pairwise_tukeyhsd(endog, groups, alpha=0.05) for tuky’s HSD(honestly significant difference) test. Argument endog is response variable, array of data (A[0] A[1]… A[6] B[1] … B[6] C[1] … C[6]). Argument groups is list of names(A, A…A, B…B, C…C) that corresponds to response variable. Alpha is significance level
 
 
@@ -687,9 +687,9 @@ except ValueError as ve:
       ret = ret.dtype.type(ret / rcount)
 
 
-## Nonparametric Statistical Hypothesis Tests
+# Nonparametric Statistical Hypothesis Tests
 
-### Mann-Whitney U Test
+## Mann-Whitney U Test
 Tests whether the distributions of two independent samples are equal or not.
 
 Assumptions
@@ -721,7 +721,7 @@ else:
     Probably the same distribution
 
 
-#### Wilcoxon Signed-Rank Test
+## Wilcoxon Signed-Rank Test
 Tests whether the distributions of two paired samples are equal or not.
 
 Assumptions
@@ -755,7 +755,7 @@ else:
     Probably the same distribution
 
 
-#### Kruskal-Wallis H Test
+## Kruskal-Wallis H Test
 Tests whether the distributions of two or more independent samples are equal or not.
 
 Assumptions
@@ -787,7 +787,7 @@ else:
     Probably the same distribution
 
 
-#### Friedman Test
+## Friedman Test
 Tests whether the distributions of two or more paired samples are equal or not.
 
 Assumptions
